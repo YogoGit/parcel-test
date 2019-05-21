@@ -1,3 +1,7 @@
+import React from "react";
+import { render } from "react-dom";
+import { Guitar } from "./Guitar";
+
 class App extends React.Component {
   handleTitleClick() {
     alert("You Clicked the Title!");

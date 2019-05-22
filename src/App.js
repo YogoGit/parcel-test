@@ -6,7 +6,9 @@ class App extends React.Component {
   handleTitleClick() {
     alert("You Clicked the Title!");
   }
-render() {
+
+  render() {
+    console.log("alertx");
     return React.createElement("div", {}, [
       React.createElement(
         "h1",

@@ -1,7 +1,7 @@
 FROM node:8.16-alpine
 
 # Install git and parcel
-RUN apk update && apk --no-cache add git && \
+RUN apk update && apk --no-cache add git curl && \
     npm install -g parcel-bundler
 
 # Bundle APP files

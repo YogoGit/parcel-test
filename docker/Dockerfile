@@ -22,4 +22,5 @@ RUN parcel build index.html
 # Expose the listening port of your app
 EXPOSE 80
 
-CMD ["parcel", "serve", "index.html", "--port", "80", "--hmr-port", "1235"]
+COPY docker/start.sh /
+CMD ["/start.sh"]
